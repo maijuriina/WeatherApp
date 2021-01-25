@@ -15,9 +15,6 @@
 		79EF42C425BEDAA80080A9C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EF429925BEDAA60080A9C2 /* ContentView.swift */; };
 		79EF42C525BEDAA80080A9C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79EF429A25BEDAA80080A9C2 /* Assets.xcassets */; };
 		79EF42C625BEDAA80080A9C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79EF429A25BEDAA80080A9C2 /* Assets.xcassets */; };
-		79EF42DD25BEE1800080A9C2 /* light_background.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 79EF42DA25BEE1800080A9C2 /* light_background.pdf */; };
-		79EF42DE25BEE1800080A9C2 /* dark_background.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 79EF42DB25BEE1800080A9C2 /* dark_background.pdf */; };
-		79EF42F325BEE4BC0080A9C2 /* 1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 79EF42F225BEE4BC0080A9C2 /* 1024.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +49,6 @@
 		79EF42BA25BEDAA80080A9C2 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79EF42BE25BEDAA80080A9C2 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		79EF42C025BEDAA80080A9C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		79EF42DA25BEE1800080A9C2 /* light_background.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = light_background.pdf; sourceTree = "<group>"; };
-		79EF42DB25BEE1800080A9C2 /* dark_background.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = dark_background.pdf; sourceTree = "<group>"; };
-		79EF42F225BEE4BC0080A9C2 /* 1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1024.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +86,6 @@
 		79EF429225BEDAA60080A9C2 = {
 			isa = PBXGroup;
 			children = (
-				79EF42F225BEE4BC0080A9C2 /* 1024.png */,
-				79EF42D925BEE0F20080A9C2 /* Pictures */,
 				79EF429725BEDAA60080A9C2 /* Shared */,
 				79EF42A125BEDAA80080A9C2 /* iOS */,
 				79EF42A825BEDAA80080A9C2 /* macOS */,
@@ -157,15 +149,6 @@
 				79EF42C025BEDAA80080A9C2 /* Info.plist */,
 			);
 			path = "Tests macOS";
-			sourceTree = "<group>";
-		};
-		79EF42D925BEE0F20080A9C2 /* Pictures */ = {
-			isa = PBXGroup;
-			children = (
-				79EF42DB25BEE1800080A9C2 /* dark_background.pdf */,
-				79EF42DA25BEE1800080A9C2 /* light_background.pdf */,
-			);
-			path = Pictures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,10 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79EF42DE25BEE1800080A9C2 /* dark_background.pdf in Resources */,
 				79EF42C525BEDAA80080A9C2 /* Assets.xcassets in Resources */,
-				79EF42F325BEE4BC0080A9C2 /* 1024.png in Resources */,
-				79EF42DD25BEE1800080A9C2 /* light_background.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
