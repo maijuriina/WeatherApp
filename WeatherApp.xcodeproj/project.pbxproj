@@ -11,6 +11,7 @@
 		79EC45FC25C7E08B000C4734 /* WeatherNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EC45FB25C7E08B000C4734 /* WeatherNetworkManager.swift */; };
 		79EC460D25C7E4A8000C4734 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EC460C25C7E4A8000C4734 /* Weather.swift */; };
 		79EC462525C7E735000C4734 /* NetworkProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EC462425C7E735000C4734 /* NetworkProperties.swift */; };
+		79EC46A025C82B04000C4734 /* CurrentWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EC469F25C82B04000C4734 /* CurrentWeatherViewModel.swift */; };
 		79EF42B425BEDAA80080A9C2 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EF42B325BEDAA80080A9C2 /* Tests_iOS.swift */; };
 		79EF42BF25BEDAA80080A9C2 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EF42BE25BEDAA80080A9C2 /* Tests_macOS.swift */; };
 		79EF42C125BEDAA80080A9C2 /* WeatherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79EF429825BEDAA60080A9C2 /* WeatherAppApp.swift */; };
@@ -43,6 +44,7 @@
 		79EC45FB25C7E08B000C4734 /* WeatherNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherNetworkManager.swift; sourceTree = "<group>"; };
 		79EC460C25C7E4A8000C4734 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		79EC462425C7E735000C4734 /* NetworkProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProperties.swift; sourceTree = "<group>"; };
+		79EC469F25C82B04000C4734 /* CurrentWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherViewModel.swift; sourceTree = "<group>"; };
 		79EF429825BEDAA60080A9C2 /* WeatherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppApp.swift; sourceTree = "<group>"; };
 		79EF429925BEDAA60080A9C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		79EF429A25BEDAA80080A9C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				79EF429825BEDAA60080A9C2 /* WeatherAppApp.swift */,
 				79EF429925BEDAA60080A9C2 /* ContentView.swift */,
 				79EF429A25BEDAA80080A9C2 /* Assets.xcassets */,
+				79EC469F25C82B04000C4734 /* CurrentWeatherViewModel.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				79EF42C125BEDAA80080A9C2 /* WeatherAppApp.swift in Sources */,
 				79EC45FC25C7E08B000C4734 /* WeatherNetworkManager.swift in Sources */,
 				79EC460D25C7E4A8000C4734 /* Weather.swift in Sources */,
+				79EC46A025C82B04000C4734 /* CurrentWeatherViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,10 +8,9 @@
 import Foundation
 
 class WeatherNetworkManager : NetworkManagerProtocol {
-    
-    func fetchCurrentWeather(city: String, onSuccess: @escaping (WeatherModel) -> Void) {
+    func fetchCurrentWeather(city: String, completion: @escaping (WeatherModel) -> ()) {
     let formattedCity = city.replacingOccurrences(of: " ", with: "+")
-    let API_URL = "http://api.openweathermap.org/data/2.5/weather?q=\(formattedCity)&appid=\(NetworkProperties.API_KEY)"
+    let API_URL = "https://api.openweathermap.org/data/2.5/weather?q=\(formattedCity)&appid=\(NetworkProperties.API_KEY)&units=metric"
 
     guard let url = URL(string: API_URL) else { // create url
         fatalError()
@@ -25,7 +24,8 @@ class WeatherNetworkManager : NetworkManagerProtocol {
         // if not nil, decode with WeatherModel
         do {
             let currentWeather = try JSONDecoder().decode(WeatherModel.self, from: data)
-            onSuccess(currentWeather)
+            print(currentWeather)
+            completion(currentWeather)
         } catch {
              print(error)
         }
