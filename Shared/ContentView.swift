@@ -11,21 +11,22 @@ import UIKit
 struct ContentView: View {
     // create instance of NetworkManager
     let networkManager = WeatherNetworkManager()
-    @State var city: String = "Lappeenranta"
+    @State var city: String = ""
     @State private var selected = 0
-    //var weatherModel: WeatherModel?
     @ObservedObject var weather = CurrentWeatherViewModel()
     
     var body: some View {
         VStack () {
+            TextField("Search...", text: $city, onCommit: {
+                self.weather.fetch(by: self.city)
+            }).textFieldStyle(RoundedBorderTextFieldStyle())
+            .padding(.horizontal)
+            
             GeometryReader { gr in
                 CurrentWeather(weather: self.weather.current, height: self.selected == 0 ?
-                                gr.size.height : gr.size.height * 0.50).animation(.easeOut(duration: 0.5))
+                                gr.size.height : gr.size.height * 0.5).animation(.easeOut(duration: 0.6))
             }
-            Spacer()
-            
         }
-
           .background(
             Image("dark_background")
                 .resizable()
@@ -33,8 +34,7 @@ struct ContentView: View {
                 .clipped()
                 .edgesIgnoringSafeArea(.all)
           )
-        
-        
+        .padding(.leading)
     }
 }
 
